@@ -21,6 +21,11 @@ nav div li{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+nav img{
+    width: 50px;
+    border-radius: 1em;
+}
+
 .sec1 .col img{
     width: 300px;
     margin-top: 4em;
@@ -145,4 +150,17 @@ li{
     margin-top: .4em;
     color: rgba(25, 23, 23, 0.594);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sec3 .email-send{
+    border-radius: 5em;
+    padding: .5em;
+    margin-left: .3em;
+}
+
+.sec4 .carousel-caption{
+    transform: translateY(-150px);
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(41, 41, 217, 0.568);background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,51,121,0.8804564061952906) 19%, rgba(0,212,255,1) 100%);
 }
