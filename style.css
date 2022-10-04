@@ -3,7 +3,6 @@ body{
 }
 
 nav{
-    height: 60px;
     padding: 1em;
     background-color: rgba(41, 41, 217, 0.568);background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,51,121,0.8804564061952906) 19%, rgba(0,212,255,1) 100%);
@@ -141,7 +140,7 @@ li{
 
 .carimage img{
     width: 340px;
-    margin-left: .8em;
+    margin: 1em;
 }
 
 .carindi{
@@ -220,4 +219,28 @@ li{
     font-size: 40px;
     margin-bottom: .5em;
     color: blue;
+}
+
+.sec6{
+    background-color: rgba(41, 41, 217, 0.568);background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,51,121,0.8804564061952906) 19%, rgba(0,212,255,1) 100%);
+    margin-bottom: 4em;
+    padding: 4em;
+}
+
+.sec6 h2{
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+.sec6 p{
+    font-size: 30px;
+    color: rgba(245, 245, 245, 0.541);
+    font-style: italic;
+}
+
+.sec6 a{
+    width: 30%;
+    margin-top: 1em;
 }
