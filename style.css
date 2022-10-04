@@ -127,6 +127,7 @@ li{
 }
 
 .sec3 input{
+    display: block;
     margin-top: 1em;
     padding: .5em;
     border-radius: .2em;
@@ -169,9 +170,10 @@ li{
 .sec3 .email-send{
     border-radius: 5em;
     padding: .5em;
-    margin-left: 2.3em;
+    margin-left: 11.3em;
     margin-top: .7em;
     position: absolute;
+    transform: translateY(-10px);
 }
 
 .sec4 .carousel-caption{
@@ -225,7 +227,8 @@ li{
     background-color: rgba(41, 41, 217, 0.568);background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,51,121,0.8804564061952906) 19%, rgba(0,212,255,1) 100%);
     margin-bottom: 4em;
-    padding: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .sec6 h2{
