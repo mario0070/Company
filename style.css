@@ -1,9 +1,13 @@
 body{
     max-width: 1440px;
+    /* width: 100vw; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 nav{
-    width: 100%;
+    /* width: 90%; */
     background-color: rgba(41, 41, 217, 0.568);background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,51,121,0.8804564061952906) 19%, rgba(0,212,255,1) 100%);
 }
@@ -30,6 +34,19 @@ nav img{
     width: 300px;
     margin-top: 4em;
     margin-bottom: 2em;
+}
+
+.sec1 .para{
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.sec1 .demo{
+    color: rgba(245, 245, 245, 0.603);
+    position: absolute;
+    transform: translateY(-20px);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .sec2 .col img{
@@ -126,7 +143,7 @@ li{
 
 .carimage img{
     width: 340px;
-    margin-left: 1.4em;
+    margin-left: .8em;
 }
 
 .carindi{
@@ -155,7 +172,9 @@ li{
 .sec3 .email-send{
     border-radius: 5em;
     padding: .5em;
-    margin-left: .3em;
+    margin-left: 2.3em;
+    margin-top: .7em;
+    position: absolute;
 }
 
 .sec4 .carousel-caption{
@@ -163,4 +182,44 @@ li{
     font-family: 'Courier New', Courier, monospace;
     background-color: rgba(41, 41, 217, 0.568);background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,51,121,0.8804564061952906) 19%, rgba(0,212,255,1) 100%);
+}
+
+.sec5{
+    margin-top: 3em;
+    margin-bottom: 5em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.sec5 .section{
+    box-shadow:inset .3em .3em 1em rgba(0, 0, 0, 0.212);
+    border-radius: 1em;
+    padding: 3em;
+    text-align: center;
+    margin-bottom: 2em;
+    transition: .5s;
+    height: 90%;
+}
+
+.sec5 .section:hover{
+    cursor: pointer;
+    box-shadow:inset .3em .3em 1em rgba(0, 0, 0, 0.904);
+    transition: .5s;
+    transform: translateY(-10px) rotateY(-20deg);
+}
+
+.sec5 .section p{
+    color: grey;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.sec5 .section h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sec5 .section span i{
+    font-size: 40px;
+    margin-bottom: .5em;
+    color: blue;
 }
