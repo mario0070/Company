@@ -26,6 +26,21 @@ nav img{
     border-radius: 1em;
 }
 
+.reveal{
+    position: relative;
+    /* transform: translateX(150px); */
+    transform: scale(0.0)  translateY(-150px);
+    opacity: 0;
+}
+
+.reveal.active{
+    /* transform: translateX(0px); */
+    opacity: 1;
+    transform: scale(1.0)  translateY(0px);
+    transition:all 1s ease;
+    transition: 1s;
+}
+
 .sec1 .col img{
     width: 300px;
     margin-top: 4em;
