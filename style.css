@@ -56,7 +56,9 @@ nav img{
 .sec1 .demo{
     color: rgba(245, 245, 245, 0.603);
     position: absolute;
-    transform: translateY(-20px);
+    transform: translateY(-25px);
+    text-decoration: underline;
+    text-decoration-thickness: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
