@@ -57,8 +57,6 @@ nav img{
     color: rgba(245, 245, 245, 0.603);
     position: absolute;
     transform: translateY(-25px);
-    text-decoration: underline;
-    text-decoration-thickness: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -72,7 +70,6 @@ nav img{
     margin-bottom: 2em;
     margin-left: 2em;
 }
-
 
 .sec1{
     border-bottom-right-radius: 10em;
@@ -129,6 +126,7 @@ li{
 }
 
 .sec3{
+    text-align: center;
     border-bottom-right-radius: 5em;
     border-top-left-radius: 5em;
     color: rgba(245, 245, 245, 0.674);
@@ -143,13 +141,25 @@ li{
     font-style: italic;
 }
 
+.sec3 .input{
+    margin: 0 15%;
+}
+
 .sec3 input{
+    width: 100%;
     display: block;
     margin-top: 1em;
     padding: .5em;
-    border-radius: .2em;
-    border-bottom-right-radius: 1em;
+    border-radius: .5em;
+    padding: 1em;
     border: none;
+}
+
+.sec3 .email-send{
+    border-radius: 5em;
+    padding: 1.8em;
+    text-align: center;
+    margin-top: 1.7em;
 }
 
 .carimage{
@@ -184,15 +194,6 @@ li{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.sec3 .email-send{
-    border-radius: 5em;
-    padding: .5em;
-    margin-left: 11.3em;
-    margin-top: .7em;
-    position: absolute;
-    transform: translateY(-10px);
-}
-
 .sec4 .carousel-caption{
     transform: translateY(-150px);
     font-family: 'Courier New', Courier, monospace;
@@ -219,9 +220,8 @@ li{
 
 .sec5 .section:hover{
     cursor: pointer;
-    box-shadow:inset .3em .3em 1em rgba(0, 0, 0, 0.904);
     transition: .5s;
-    transform: translateY(-10px) rotateY(-20deg);
+    transform: translateY(-20px);
 }
 
 .sec5 .section p{
@@ -243,9 +243,10 @@ li{
 .sec6{
     background-color: rgba(41, 41, 217, 0.568);background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,51,121,0.8804564061952906) 19%, rgba(0,212,255,1) 100%);
-    margin-bottom: 4em;
+    margin-bottom: 6em;
     padding-top: 1em;
     padding-bottom: 1em;
+    margin-top: 5em;
 }
 
 .sec6 h2{
@@ -263,4 +264,95 @@ li{
 .sec6 a{
     width: 30%;
     margin-top: 1em;
+}
+
+.sec7 {
+    margin-top: 10em;
+    padding: 3em;
+    background: rgb(19,19,20);
+    background: linear-gradient(90deg, rgba(19,19,20,0.5975432409291841) 3%, rgba(18,84,107,1) 29%, rgba(18,88,130,0.7039858179599965) 47%, rgba(16,81,223,1) 100%);
+}
+
+.sec7 .head{
+    color: whitesmoke;
+    margin-bottom: 2em;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sec7 .col-head p{
+    color: rgba(245, 245, 245, 0.461);
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.sec7 .col-head h2{
+    text-align: center;
+    color: rgba(249, 182, 182, 0.724);
+    font-weight: 900;
+    font-size: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sec7 .input button{
+    margin-top: 1em;
+}
+
+.sec7 .input input{
+    padding: 1em;
+    border: none;
+    border-radius: .5em;
+    display: block;
+    width: 100%;
+}
+
+.sec7 .input{
+    margin: 0 15%;
+    text-align: center;
+}
+
+
+.sec7 span{
+    display: block;
+    margin-top: 2em;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sec8{
+    margin-top: 5em;
+    padding: 2em;
+}
+
+.sec8 h2{
+    color: rgba(15, 15, 197, 0.781);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    margin-bottom: .5em;
+    font-size: 22px;
+}
+
+.sec8 .section{
+    width: 100%;
+    padding: 1em;
+}
+
+.sec8 p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.404);
+    font-style: italic;
+    margin-bottom: 2em;
+}
+
+.sec8 img{
+    width: 100px;
+}
+
+.sec8 button{
+    width: 50%;
+    padding: 1em;
+    font-weight: 900;
 }
