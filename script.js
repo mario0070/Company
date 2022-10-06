@@ -27,3 +27,19 @@ function reveal(){
         }
     }
 }
+
+
+let counts=setInterval(updated);
+let upto=0;
+function updated(){
+
+    
+    var count1= document.getElementById("counter3");
+    count1.innerHTML=++upto;
+    if(upto===100,000)
+    {
+        clearInterval(counts);
+    }
+
+}
+

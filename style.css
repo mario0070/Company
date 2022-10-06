@@ -29,14 +29,13 @@ nav img{
 .reveal{
     position: relative;
     /* transform: translateX(150px); */
-    transform: scale(0.0)  translateY(-150px);
+    transform: scale(0.0)  translateX(-150px);
     opacity: 0;
 }
 
 .reveal.active{
-    /* transform: translateX(0px); */
     opacity: 1;
-    transform: scale(1.0)  translateY(0px);
+    transform: scale(1.0)  translateX(0px);
     transition:all 1s ease;
     transition: 1s;
 }
@@ -356,3 +355,42 @@ li{
     padding: 1em;
     font-weight: 900;
 }
+
+.sec9 {
+    padding: 2em;
+    margin-bottom: 3em;
+}
+
+.sec9 h2{
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 2em;
+}
+
+.sec9 .d-flex{
+    border-bottom-right-radius: 5em;
+    background: rgb(19,19,20);
+    background: linear-gradient(90deg, rgba(19,19,20,0.5975432409291841) 3%, rgba(18,84,107,1) 29%, rgba(18,88,130,0.7039858179599965) 47%, rgba(16,81,223,1) 100%);
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+.sec9 .d-flex p{
+    color: rgba(245, 245, 245, 0.584);
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sec9 .d-flex .text-center span{
+    color: whitesmoke;
+    font-weight: 900;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.sec9 i{
+    font-size: 60px;
+    transform: translateX(-360px);
+}
+
+
