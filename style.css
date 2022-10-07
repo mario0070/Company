@@ -119,7 +119,7 @@ li{
 }
 
 .sec3{
-    padding: 4em;
+    padding: 1em;
     background: rgb(19,20,20);
     background: linear-gradient(90deg, rgba(19,20,20,0.9530434782608695) 11%, rgba(16,81,223,1) 100%);
 }
@@ -132,6 +132,7 @@ li{
 }
 
 .sec3 h2{
+    margin-top: 1em;
     font-weight: 900;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -156,7 +157,7 @@ li{
 
 .sec3 .email-send{
     border-radius: 5em;
-    padding: 1.8em;
+    padding: 1em;
     text-align: center;
     margin-top: 1.7em;
 }
@@ -443,3 +444,91 @@ li{
     border: 2px solid red;
     outline: none;
 }
+
+.over{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.737);
+    display: none;
+}
+
+.lay{
+    margin: 25% 45%;
+}
+
+#over.valid{
+    display: block;
+}
+
+#over.invalid{
+    display: none;
+}
+
+
+
+
+.popup button {
+    font-weight: 900;
+    padding: 1em;
+    cursor: pointer;
+    width: 50%;
+    margin: 0 25%;
+  }
+  
+  
+  /* The Modal (background) */
+ .popup .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 10; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.409);
+    padding-top: 50px;
+  }
+  
+  /* Modal Content/Box */
+ .popup .modal-content {
+    background-color: #fefefe;
+    margin: 20% auto 15% auto;
+    width: 80%; 
+    padding: 1em;
+    text-align: center;
+  }
+
+  .popup .modal .modal-content #emailvalue {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(0, 0, 0, 0.546);
+    font-weight: 900;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #checked.valid{
+    color: orange;
+} */
+
+
+
+
+

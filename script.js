@@ -43,9 +43,6 @@ function updated(){
 
 }
 
-var email=document.getElementById("email-news")
-var modal=document.getElementById("one")
-
 
 function wow(){
     
@@ -57,14 +54,78 @@ function wow(){
     }
 }
 
+function wowbtn2(){
+    
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if(emailstart.value.match(validRegex)){
+        document.getElementById("email-start-send").disabled=false
+    }else{
+        document.getElementById("email-start-send").disabled=true
+    }
+}
+
+
+var emailStartSend=document.getElementById("email-start-send")
+var emailstart = document.getElementById("email-start")
+var email=document.getElementById("email-news")
+var modal=document.getElementById("one")
+var overlay=document.getElementById("over")
+var sub=document.getElementById("subscribe")
+var modal = document.getElementById('id01');
+var emailvalue=document.getElementById("emailvalue")
+
+
+sub.addEventListener("click" , () => {
+    overlay.classList.add("valid")
+    setTimeout(() => {
+        emailvalue.innerHTML=email.value
+        overlay.classList.add("invalid")
+        email.value=""
+        document.getElementById("subscribe").disabled=true
+        modal.style.display="block"
+    }, 6000);
+})
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+emailStartSend.addEventListener("click" , () => {
+    overlay.classList.add("valid")
+    setTimeout(() => {
+        emailvalue.innerHTML=emailstart.value
+        overlay.classList.add("invalid")
+        emailStartSend.value=""
+        document.getElementById("subscribe").disabled=true
+        modal.style.display="block"
+    }, 6000);
+})
+
+
+
 // sub.addEventListener("click",() =>  {
 //     if (email.value == "" ){
 //         email.classList.add("invalid")
-//         sub=disableButton
 //     }else if(email.value.length < 5){
-//         console.log("no")
 //         email.classList.add("invalid")
 //     }else if(email.value.length > 7){
 //         email.classList.remove("invalid")
 //     }
+// })
+
+
+
+
+
+
+
+
+
+// var check=document.getElementById("checked")
+// check.addEventListener("click",() => {
+//     check.classList.toggle("valid")
 // })

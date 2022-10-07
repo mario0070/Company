@@ -108,8 +108,8 @@
       <p>Enter your Email Address to enjoy the <strong class="text-danger">Amazing Offer</strong>.</p>
     </div>
     <div class="input reveal">
-      <input type="email" name="Email" id="" placeholder="Enter Your Email" required>
-      <button class="btn btn-outline-light email-send"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+      <input type="email" name="Email" id="email-start" placeholder="Enter Your Email" required onkeyup="wowbtn2()">
+      <button class="btn btn-light email-send" id="email-start-send" disabled><i class="fa fa-paper-plane text-primary fs-4"></i></button>
     </div>
   </div>
 
@@ -287,6 +287,13 @@
             </div>
             <div class="para">
               <p class="text-center">We crawl your site on demand, uncover technical SEO issues, and recommend improvements and fixes.</p>
+            <!-- <div class="d-flex text-center">
+              <span class="fa fa-star checked" id="checked"></span>
+              <span class="fa fa-star checked" id="checked"></span>
+              <span class="fa fa-star checked" id="checked"></span>
+              <span class="fa fa-star" id="checked"></span>
+              <span class="fa fa-star" id="checked"></span>
+            </div> -->
             </div>
           </div>
       </div>
@@ -391,10 +398,9 @@
           <div class="head">
             <h2 class="reveal">Get Regular Updates from <Strong class="text-danger">Company</Strong></h2>
             <p class="reveal">SUBSCRIBE TO NEWSLETTER</p>
-            <form action="">
-              <input type="email" name="" id="email-news" placeholder="Email" required onkeyup="wow()">
-              <button class="btn btn-primary" id="subscribe" disabled>Subscribe</button>
-            </form>
+            
+            <input type="email" name="" id="email-news" placeholder="Email" required onkeyup="wow()">
+            <button class="btn btn-primary" id="subscribe" disabled>Subscribe</button>
           </div>
         </div>
       </div>
@@ -420,6 +426,41 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="over" id="over">
+    <h1 class="text-light lay">
+      <span class="text-primary spinner spinner-border"></span>
+    </h1>
+  </div>
+
+  <button onclick="document.getElementById('id01').style.display='block'">Open Modal</button>
+<div class="popup">
+  <div id="id01" class="modal">
+   <div class="modal-content">
+      <div class="container">
+        <p id="emailvalue">wow</p>
+        <h1 class="text-success text-italic"><i class="fa-sharp fa-solid fa-circle-check text-primary"></i></h1>
+        <p>Thanks for <strong class="text-danger">Subscribing</strong> to our newsletter</p>
+  
+        <div class="d-flex">
+         <button onclick="document.getElementById('id01').style.display='none'" class="btn btn-outline-primary">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
