@@ -394,3 +394,52 @@ li{
 }
 
 
+.sec10{
+    background-color: rgba(0, 255, 255, 0.53);
+    padding: 2em;
+}
+
+.sec10 img{
+    width: 70%;
+    margin: 0 15%;
+}
+
+.sec10 .head{
+    margin: 25% 5%;
+}
+
+.sec10 .head h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sec10 .head p{
+    text-align: center;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.482);
+    font-style: italic;
+}
+
+.sec10 input{
+    display: block;
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-radius: .5em;
+    outline: none;
+}
+
+.sec10 button{
+    display: block;
+    width: 60%;
+    padding: .5em;
+    margin-top: 1em;
+    font-weight: 900;
+}
+
+#email-news.invalid{
+    border: 2px solid red;
+    outline: none;
+}

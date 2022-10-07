@@ -43,3 +43,28 @@ function updated(){
 
 }
 
+var email=document.getElementById("email-news")
+var modal=document.getElementById("one")
+
+
+function wow(){
+    
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if(email.value.match(validRegex)){
+        document.getElementById("subscribe").disabled=false
+    }else{
+        document.getElementById("subscribe").disabled=true
+    }
+}
+
+// sub.addEventListener("click",() =>  {
+//     if (email.value == "" ){
+//         email.classList.add("invalid")
+//         sub=disableButton
+//     }else if(email.value.length < 5){
+//         console.log("no")
+//         email.classList.add("invalid")
+//     }else if(email.value.length > 7){
+//         email.classList.remove("invalid")
+//     }
+// })
