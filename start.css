@@ -59,11 +59,9 @@
   }
 
   .part2 .d-block{
-    margin-bottom: 3em;
     margin-top: 5em;
     margin-left: 1em;
-    font-weight: 900;
-    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
   }
 
   .part2 .extra{
