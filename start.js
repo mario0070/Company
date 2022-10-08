@@ -1,7 +1,31 @@
-function digits_count(n) { 
-    var count = 0; 
-    if (n >= 1) ++count; 
-    while (n / 10 >= 1) { n /= 10; ++count; } 
-    return count; 
-} 
-console.log(digits_count(12112)); console.log(digits_count(457));
+window.addEventListener("load",() => {
+    over.classList.add("valid")
+    document.getElementById("body").classList.add("valid")
+    setTimeout(()=>{
+        over.classList.remove("valid")
+        document.getElementById("body").classList.remove("valid")
+    },2000)
+})
+
+var over=document.getElementById("over1")
+
+window.addEventListener("scroll",reveal)
+
+function reveal(){
+    var reveals=document.querySelectorAll(".reveals")
+
+    for (var i = 0 ; i < reveals.length ;i++){
+        var windowh=window.innerHeight;
+        var revealt=reveals[i].getBoundingClientRect().top;
+        var revealp=20;
+
+        if(revealt < windowh - revealp){
+            reveals[i].classList.add("active")
+        
+        }
+        else{
+            reveals[i].classList.remove("active")
+            
+        }
+    }
+}

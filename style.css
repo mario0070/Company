@@ -5,6 +5,10 @@ body{
     box-sizing: border-box;
 }
 
+#body.valid{
+    display: none;
+}
+
 nav{
     padding: 1em;
     background-color: rgba(41, 41, 217, 0.568);background: rgb(2,0,36);
@@ -510,7 +514,7 @@ footer img{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.737);
+    background-color: rgba(0, 0, 0, 0.18);
     display: none;
 }
 
@@ -646,7 +650,7 @@ footer img{
 
     .popup .modal-content {
         background-color: #fefefe;
-        margin: 20% auto 15% auto;
+        margin: 10% auto 15% auto;
         width: 30%; 
         padding: 1em;
         text-align: center;

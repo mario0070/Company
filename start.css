@@ -1,9 +1,25 @@
+
+.reveals{
+    transform: scale(0.0)  translateX(-150px);
+    opacity: 0;
+}
+
+.reveals.active{
+    opacity: 1;
+    transform: scale(1.0)  translateX(0px);
+    transition:all 1s ease;
+    transition: 1s;
+}
+
+
 .part1{
     color: whitesmoke;
     padding: 3em;
     margin-bottom: 2em;
     box-shadow: -.1em -.1em 1em rgba(0, 0, 0, 0.142);
     background-color: rgb(2,0,36);
+    border-bottom-left-radius: 50em;
+    border-bottom-right-radius: 50em;
   }
 
   .part1 h1{
@@ -27,6 +43,7 @@
     font-weight: 900;
     padding: 1em;
     border: none;
+    margin-bottom: 1em;
   }
 
   .part2{
