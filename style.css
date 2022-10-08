@@ -1,5 +1,8 @@
 body{
     max-width: 1440px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 nav{
@@ -440,6 +443,59 @@ li{
     font-weight: 900;
 }
 
+
+
+footer{
+    width: 100%;
+    padding: 1em;
+    position: absolute;
+    box-shadow: -.1em -.1em 1em rgba(0, 0, 0, 0.142);
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+footer .d-flex {
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+footer h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: rgb(206, 177, 16) underline;
+}
+
+footer .text-center{
+    margin-top: 1em;
+    color: rgba(0, 0, 0, 0.648);
+}
+
+footer .icon{
+    margin-top: 1em;
+}
+
+footer img{
+    width: 50px;
+    border-radius: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 #email-news.invalid{
     border: 2px solid red;
     outline: none;
@@ -459,26 +515,40 @@ li{
 }
 
 .lay{
-    margin: 25% 45%;
+    margin: 65% 45%;
 }
 
-#over.valid{
+#over1.valid{
     display: block;
 }
 
-#over.invalid{
+#over1.invalid{
+    display: none;
+}
+
+#over2.valid{
+    display: block;
+}
+
+#over2.invalid{
     display: none;
 }
 
 
 
-
-.popup button {
+#modal1 button {
     font-weight: 900;
     padding: 1em;
     cursor: pointer;
     width: 50%;
     margin: 0 25%;
+  }
+
+#modal2 button , #modal2 a {
+    font-weight: 900;
+    padding: .5em;
+    cursor: pointer;
+    margin: .4em;
   }
   
   
@@ -503,30 +573,99 @@ li{
     width: 80%; 
     padding: 1em;
     text-align: center;
+    border-radius: .5em;
+    
   }
 
-  .popup .modal .modal-content #emailvalue {
+  .popup .modal .modal-content #emailvalue1,.popup .modal .modal-content #emailvalue2 {
     font-family: 'Courier New', Courier, monospace;
     color: rgba(0, 0, 0, 0.546);
     font-weight: 900;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width:600px) {
   
 
+    .sec1 .col img{
+        width: 500px;
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
 
+    .sec1 .demo{
+        color: rgba(245, 245, 245, 0.603);
+        border-bottom: 10px solid rgba(245, 245, 245, 0.603);
+    }
 
+    .sec2 .head h2{
+        margin-left: 3em;
+    }
+    
+    .sec2 .buttons .btn{
+        margin: 1.5em;
+    }
+    
+    .sec2 .buttons{
+        margin-left: 4em;
+    }
+    
+    .sec2 .buttons .social{
+        border-radius: 3em;
+    }
 
+    
+    .sec2 .col img{
+        width: 500px;
+        margin-top: 1em;
+    }
 
+    .sec2 .soc{
+        margin-left: 5em;
+    }
 
+    .sec3 input{
+        width: 60%;
+        margin-left: 12em;
+    }
 
+    .sec5 .row .section{
+        margin-top: 3em;
+    }
 
+    .popup .modal-content {
+        background-color: #fefefe;
+        margin: 20% auto 15% auto;
+        width: 30%; 
+        padding: 1em;
+        text-align: center;
+        border-radius: .5em;
+        
+    }
 
+    .lay{
+        margin: 25% 45%;
+    }
+    
 
-
-
-
-/* #checked.valid{
-    color: orange;
-} */
+    
+    .sec4{
+        display: none;
+    }
+    
+    
+  }
 
 
 

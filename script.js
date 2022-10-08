@@ -21,9 +21,11 @@ function reveal(){
 
         if(revealt < windowh - revealp){
             reveals[i].classList.add("active")
+        
         }
         else{
             reveals[i].classList.remove("active")
+            
         }
     }
 }
@@ -69,39 +71,45 @@ var emailStartSend=document.getElementById("email-start-send")
 var emailstart = document.getElementById("email-start")
 var email=document.getElementById("email-news")
 var modal=document.getElementById("one")
-var overlay=document.getElementById("over")
+var overlay1=document.getElementById("over1")
+var overlay2=document.getElementById("over2")
 var sub=document.getElementById("subscribe")
-var modal = document.getElementById('id01');
-var emailvalue=document.getElementById("emailvalue")
+var modal1 = document.getElementById('modal1');
+var modal2 = document.getElementById('modal2');
+var emailvalue1=document.getElementById("emailvalue1")
+var emailvalue2=document.getElementById("emailvalue2")
 
 
 sub.addEventListener("click" , () => {
-    overlay.classList.add("valid")
+    overlay1.classList.add("valid")
     setTimeout(() => {
-        emailvalue.innerHTML=email.value
-        overlay.classList.add("invalid")
+        emailvalue1.innerHTML=email.value
+        overlay1.classList.add("invalid")
         email.value=""
         document.getElementById("subscribe").disabled=true
-        modal.style.display="block"
+        modal1.style.display="block"
     }, 6000);
 })
 
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+  if (event.target == modal2) {
+    modal2.style.display = "none";
   }
 }
 
 emailStartSend.addEventListener("click" , () => {
-    overlay.classList.add("valid")
+    overlay2.classList.add("valid")
     setTimeout(() => {
-        emailvalue.innerHTML=emailstart.value
-        overlay.classList.add("invalid")
-        emailStartSend.value=""
-        document.getElementById("subscribe").disabled=true
-        modal.style.display="block"
+        emailvalue2.innerHTML=emailstart.value
+        overlay2.classList.add("invalid")
+        emailstart.value=""
+        document.getElementById("email-start-send").disabled=true
+        modal2.style.display="block"
     }, 6000);
 })
 
