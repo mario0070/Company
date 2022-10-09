@@ -1,10 +1,9 @@
 window.addEventListener("load",() => {
     over.classList.add("valid")
-    document.getElementById("body").classList.add("valid")
     setTimeout(()=>{
         over.classList.remove("valid")
-        document.getElementById("body").classList.remove("valid")
-    },2000)
+        document.getElementById("body").classList.add("valid")
+    },3000)
 })
 
 var over=document.getElementById("over1")

@@ -5,8 +5,12 @@ body{
     box-sizing: border-box;
 }
 
-#body.valid{
+main{
     display: none;
+}
+
+#body.valid{
+    display: block;
 }
 
 nav{
@@ -497,7 +501,9 @@ footer img{
 
 
 
-
+#bodys.valid{
+    overflow: hidden;
+}
 
 
 #email-news.invalid{
@@ -514,7 +520,7 @@ footer img{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.18);
+    background-color: rgba(0, 0, 0, 0.071);
     display: none;
 }
 

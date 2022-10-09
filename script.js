@@ -82,7 +82,9 @@ var emailvalue2=document.getElementById("emailvalue2")
 
 sub.addEventListener("click" , () => {
     overlay1.classList.add("valid")
+    document.getElementById("bodys").classList.add("valid")
     setTimeout(() => {
+        document.getElementById("bodys").classList.remove("valid")
         emailvalue1.innerHTML=email.value
         overlay1.classList.add("invalid")
         email.value=""
@@ -94,11 +96,11 @@ sub.addEventListener("click" , () => {
 
 window.addEventListener("load",() => {
     document.getElementById("over2").classList.add("valid")
-    document.getElementById("body").classList.add("valid")
+    // document.getElementById("body").classList.add("valid")
     setTimeout(()=>{
         document.getElementById("over2").classList.remove("valid")
-        document.getElementById("body").classList.remove("valid")
-    },2000)
+        document.getElementById("body").classList.add("valid")
+    },3000)
 })
 
 // When the user clicks anywhere outside of the modal, close it
