@@ -40,20 +40,20 @@
                       <div class="row">
                         <div class="col-md-6 mb-4">
                           <div class="form-outline">
-                            <input type="text" id="fname"  class="form-control form-control-md" required />
+                            <input type="text" id="fname"  class="form-control form-control-md" onkeyup="validation1(),enableBtn()" />
                             <label class="form-label">First name</label>
                           </div>
                         </div>
                         <div class="col-md-6 mb-4">
                           <div class="form-outline">
-                            <input type="text"  class="form-control form-control-md" required />
+                            <input type="text" id="lname"  class="form-control form-control-md" onkeyup="validation2(),enableBtn()" />
                             <label class="form-label" >Last name</label>
                           </div>
                         </div>
                       </div>
       
                       <div class="form-outline mb-4">
-                        <input type="email" class="form-control form-control-md" />
+                        <input type="email" id="email" class="form-control form-control-md" onkeyup="validation3(),enableBtn()"/>
                         <label class="form-label" >Email Address</label>
                       </div>
       
@@ -81,10 +81,10 @@
       
                       </div>
       
-                      <div class="row">
-                        <div class="col-md-6 mb-4">
+                      <div class="d-flex">
+                        <div class=" mb-4">
       
-                          <select class="select text-center p-1">
+                          <select class="select text-center p-1 mx-4">
                             <option value="1">State</option>
                             <option value="2">Lagos</option>
                             <option value="3">Kwara</option>
@@ -92,9 +92,9 @@
                           </select>
       
                         </div>
-                        <div class="col-md-6 mb-4">
+                        <div class=" mb-4">
       
-                          <select class="select text-center p-1">
+                          <select class="select text-center p-1 mx-4">
                             <option value="1">City</option>
                             <option value="2">Badagary</option>
                             <option value="3">Ilorin</option>
@@ -105,31 +105,31 @@
                       </div>
       
                       <div class="form-outline mb-4">
-                        <input type="text" class="form-control form-control-md" />
+                        <input type="text" class="form-control form-control-md" id="address" onkeyup="validation4(),enableBtn()" />
                         <label class="form-label" >Address</label>
                       </div>
 
                       <div class="row">
                         <div class="col-md-6 mb-4">
                           <div class="form-outline">
-                            <input type="password"  class="form-control form-control-md" required />
+                            <input type="password" id="pass1"  class="form-control form-control-md" onkeyup="validation5(),enableBtn()" />
                             <label class="form-label">Password</label>
                           </div>
                         </div>
                         <div class="col-md-6 mb-4">
                           <div class="form-outline">
-                            <input type="password"  class="form-control form-control-md" required />
+                            <input type="password" id="pass2"  class="form-control form-control-md" onkeyup="validation6(),enableBtn()" />
                             <label class="form-label" >Confirm Password</label>
                             <div class="chechp">Show
-                              <input type="checkbox" name="" id="">
+                              <input type="checkbox" name="" id="check" onclick="togglePass()">
                             </div>
                           </div>
                         </div>
                       </div>
       
                       <div class="d-flex justify-content-end pt-3">
-                        <span  class="btn btn-warning btn-lg" >Reset all</span>
-                        <button  class="btn btn-success btn-lg ms-2" disabled>Continue</button>
+                        <span  class="btn btn-warning btn-lg" id="reset" onclick="reset()" >Reset all</span>
+                        <button  class="btn btn-success btn-lg ms-2" id="continue" disabled>Continue</button>
                       </div>
       
                     </div>

@@ -77,6 +77,30 @@ label,.gender{
     display: block;
 }
 
+#fname.valid{
+    border: 2px solid red;
+}
+
+#lname.valid{
+    border: 2px solid red;
+}
+
+#email.valid{
+    border: 2px solid red;
+}
+
+#address.valid{
+    border: 2px solid red;
+}
+
+#pass1.valid{
+    border: 2px solid red;
+}
+
+#pass2.valid{
+    border: 2px solid red;
+}
+
 
 
 @media screen and (min-width:600px) {
