@@ -66,9 +66,9 @@ label,.gender{
     display: none;
 }
 
-.overlay i{
+.overlay span{
     margin: 65% 45%;
-    font-size: 40px;
+    /* font-size: 40px; */
     position: fixed;
     
 }
@@ -153,9 +153,8 @@ label,.gender{
         margin: 0 48.8%;
     }
     
-    .overlay i{
-        margin: 45% 45%;
-        font-size: 40px;
+    .overlay span{
+        margin: 55% 45%;
         position: relative;
         
     }
