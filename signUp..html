@@ -128,8 +128,8 @@
                       </div>
       
                       <div class="d-flex justify-content-end pt-3">
-                        <span  class="btn btn-warning btn-lg" id="reset" onclick="reset()" >Reset all</span>
-                        <button  class="btn btn-success btn-lg ms-2" id="continue" disabled>Continue</button>
+                        <span  class="btn btn-warning btn-lg" id="reset" onclick="reset()">Reset all</span>
+                        <button  class="btn btn-success btn-lg ms-2"  id="continue" data-bs-toggle="modal" data-bs-target="#two">Continue</button>
                       </div>
       
                     </div>
@@ -141,6 +141,95 @@
           </div>
         </div>
       </section>
+
+      <div class="modal fade" id="two">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+          <div class="modal-content second">
+            <div class="modal-header" id="header">
+              <h4 id="name"></h4>
+            </div>
+            <div class="modal-body text-center second">
+              <span class="spinner text-primary spinner-border" id="spinner"></span>
+              <button  class="btn btn-outline-primary ms-2" id="continue1" data-bs-toggle="modal" data-bs-target="#one" onclick="reset()">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="modal fade right" id="one">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+          <div class="modal-content first" id="modal">
+            <div class="modal-header">
+              <span class="text-light">Payment Info</span>
+              <button class="btn-close bg-light " data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+
+              <div class="form-outline mb-4">
+                <input type="number" id="cardNum" class="form-control form-control-md"/>
+                <label class="form-label text-light" >Card Number</label>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="number" id="exp"  class="form-control form-control-md" />
+                    <label class="form-label text-light">Expiration Date</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="number" id="cvc"  class="form-control form-control-md" />
+                    <label class="form-label text-light" >CVC</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-outline mb-4">
+                <input type="text" id="fullname" class="form-control form-control-md"/>
+                <label class="form-label text-light">FullName</label>
+              </div>
+
+              <div class="form-outline mb-4">
+                <input type="text" class="form-control form-control-md" id="addres" />
+                <label class="form-label text-light" >Address</label>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="text" id="city"  class="form-control form-control-md" />
+                    <label class="form-label text-light">City</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    <input type="number" id="postal"  class="form-control form-control-md"/>
+                    <label class="form-label text-light" >Postal Code</label>
+                    <div class="chechp text-light">Agree with Terms
+                      <input type="checkbox" name="" id="check" onclick="togglePass()">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <div class="d-flex justify-content-end pt-3">
+                  <button  class="btn btn-success btn-lg ms-2">Submit</button>
+                </div>
+              </div>
+
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
       <script src="signUp.js"></script>

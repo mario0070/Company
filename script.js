@@ -100,7 +100,7 @@ window.addEventListener("load",() => {
     setTimeout(()=>{
         document.getElementById("over2").classList.remove("valid")
         document.getElementById("body").classList.add("valid")
-    },3000)
+    },1500)
 })
 
 // When the user clicks anywhere outside of the modal, close it

@@ -8,7 +8,7 @@ window.addEventListener("load",()=>{
     over.classList.remove("valid")
     forms.classList.add("valid")
     body.classList.remove("valid")
-   },4000)
+   },2000)
 })
 
 var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -127,7 +127,18 @@ function enableBtn(){
     
 }
 
-// var checkM=document.getElementById("femaleGender")
-// checkM.addEventListener("click",()=>{
-//     alert(checkM.value)
-// })
+
+var spinner=document.getElementById("spinner")
+var continues=document.getElementById("continue")
+var continue1=document.getElementById("continue1")
+var names=document.getElementById("name")
+var header=document.getElementById("header")
+continues.addEventListener("click",() => {
+     continue1.classList.remove("valid")
+    setTimeout(()=>{
+        spinner.classList.add("valid")
+        continue1.classList.add("valid")
+        header.classList.add("valid")
+        names.innerText=fname.value + " "  +lname.value
+       },9000)
+})

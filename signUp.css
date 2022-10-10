@@ -73,6 +73,19 @@ label,.gender{
     
 }
 
+#header{
+    display: none;
+}
+
+#name{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(0, 0, 0, 0.683);
+}
+
+#two button{
+    display: none;
+}
+
 #overlay.valid{
     display: block;
 }
@@ -101,6 +114,27 @@ label,.gender{
     border: 2px solid red;
 }
 
+#header.valid{
+    display: block;
+}
+
+
+.first{
+    background: url(./lionform.webp);
+    background-size: cover;
+}
+
+#spinner.valid{
+    display: none;
+}
+
+#continue1.valid{
+    display: inline;
+    padding: 1em;
+    width: 10em;
+    font-weight: 900;
+}
+
 
 
 @media screen and (min-width:600px) {
@@ -124,6 +158,12 @@ label,.gender{
         font-size: 40px;
         position: relative;
         
+    }
+
+    #modal h1{
+        margin: 0% 45%;
+        position: fixed;
+        transform: translateY(-500px);
     }
 
     #none{

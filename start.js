@@ -3,7 +3,7 @@ window.addEventListener("load",() => {
     setTimeout(()=>{
         over.classList.remove("valid")
         document.getElementById("body").classList.add("valid")
-    },3000)
+    },1500)
 })
 
 var over=document.getElementById("over1")

@@ -54,7 +54,6 @@ nav img{
 .sec1 .col img{
     width: 300px;
     margin-top: 4em;
-    margin-bottom: 2em;
 }
 
 .sec1 .para{
@@ -81,9 +80,21 @@ nav img{
     margin-left: 2em;
 }
 
+.sec1 svg{
+    position: absolute;
+    background-color: rgba(41, 41, 217, 0.568);background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,51,121,0.8804564061952906) 19%, rgba(0,212,255,1) 100%);
+    width: 100%;
+    z-index: 100;
+    transform: translateX(-48px) translateY(0px);
+}
+
 .sec1{
-    border-bottom-right-radius: 10em;
-    padding: 3em;
+    margin-bottom: 5em;
+    position: relative;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 3em;
     background-color: rgba(41, 41, 217, 0.568);background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,51,121,0.8804564061952906) 19%, rgba(0,212,255,1) 100%);
 }
@@ -520,7 +531,7 @@ footer img{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.071);
+    background-color: rgba(0, 0, 0, 0.233);
     display: none;
 }
 
@@ -614,13 +625,38 @@ footer img{
         margin-bottom: 0em;
     }
 
+    .sec1 .buttons{
+        margin-left: 5em;
+        margin-top: 2em;
+    }
+
+    .sec1 .buttons button{
+        padding: 1em;
+        width: 40%;
+        margin-left: .5em;
+    }
+
     .sec1 .demo{
         color: rgba(245, 245, 245, 0.603);
         border-bottom: 10px solid rgba(245, 245, 245, 0.603);
     }
 
+    .sec1{
+        margin-bottom: 13em;
+    }
+
+    .sec1 .para{
+        margin-top: .5em;
+        line-height: 40px;
+        margin-bottom: 1em;
+    }
+
     .sec2 .head h2{
         margin-left: 3em;
+    }
+
+    .sec1 .head .h2{
+        margin-top: 1em;
     }
     
     .sec2 .buttons .btn{
