@@ -86,7 +86,7 @@ nav img{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,51,121,0.8804564061952906) 19%, rgba(0,212,255,1) 100%);
     width: 100%;
     z-index: 100;
-    transform: translateX(-48px) translateY(0px);
+    transform: translateX(-48px) translateY(-1px);
 }
 
 .sec1{
