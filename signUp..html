@@ -167,65 +167,80 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
           <div class="modal-content first" id="modal">
             <div class="modal-header">
-              <span class="text-light">Payment Info</span>
+              <h3 class="text-white">Card Detail</h3>
               <button class="btn-close bg-light " data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
 
-              <div class="form-outline mb-4">
-                <input type="number" id="cardNum" class="form-control form-control-md"/>
-                <label class="form-label text-light" >Card Number</label>
+              <div class="form-outline mb-4 mt-3">
+                <div class="d-flex" id="svgcard">
+                  <label class="form-label text-light" >Card Number</label>
+                  <div class="d-flex" id="svgs">
+                    <img src="mastercard-svgrepo-com.svg" alt="">
+                    <img src="visa-4-logo-svgrepo-com.svg" alt="">
+                    <img src="american-express-svgrepo-com.svg" alt="">
+                    <img src="credit-card-svgrepo-com (1).svg" alt="">
+                  </div>
+                </div>
+              
+                <input type="number" id="cardNum" class="form-control form-control-md" placeholder="0000-0000-0000-0000"/>
               </div>
 
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="number" id="exp"  class="form-control form-control-md" />
                     <label class="form-label text-light">Expiration Date</label>
+                   <input type="text" id="exp"  class="form-control form-control-md" maxlength="5" placeholder="MM/YY" onkeyup="formatString(event)"/>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="number" id="cvc"  class="form-control form-control-md" />
                     <label class="form-label text-light" >CVC</label>
+                    <input type="text" id="cvc"  class="form-control form-control-md" placeholder="123" maxlength="3"/>
                   </div>
                 </div>
               </div>
 
               <div class="form-outline mb-4">
-                <input type="text" id="fullname" class="form-control form-control-md"/>
                 <label class="form-label text-light">FullName</label>
+                <input type="text" id="fullname" class="form-control form-control-md" placeholder="Joh Doe"/>
               </div>
 
               <div class="form-outline mb-4">
-                <input type="text" class="form-control form-control-md" id="addres" />
                 <label class="form-label text-light" >Address</label>
-              </div>
+                <input type="text" class="form-control form-control-md" id="addres" placeholder="Apt , Suite etc"/>
+            </div>
 
               <div class="row">
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="text" id="city"  class="form-control form-control-md" />
                     <label class="form-label text-light">City</label>
+                    <input type="text" id="city"  class="form-control form-control-md" placeholder="city" />
                   </div>
                 </div>
                 <div class="col-md-6 mb-4">
                   <div class="form-outline">
-                    <input type="number" id="postal"  class="form-control form-control-md"/>
                     <label class="form-label text-light" >Postal Code</label>
-                    <div class="chechp text-light">Agree with Terms
-                      <input type="checkbox" name="" id="check" onclick="togglePass()">
-                    </div>
+                    <input type="text" id="postal"  class="form-control form-control-md" placeholder="000000" maxlength="6"/>
                   </div>
                 </div>
-              </div>
 
-              <div class="modal-footer">
-                <div class="d-flex justify-content-end pt-3">
-                  <button  class="btn btn-success btn-lg ms-2">Submit</button>
+                <div class="summary">
+                  <h4 class="text-light">Today's charge: <strong class="text-dark bg-info px-2 mx-1">$0</strong></h4>
+                  <h5 class="text-white">Then a total of <strong class="text-dark bg-info px-2 mx-1"> $120 </strong>  per month + applicable tax beginning on November 7, 2022.</h5>
+                </div>
+
+                <div class="chechp text-light mt-1">
+                  <input type="checkbox" name="" id="check">
+                 I agree to the Company <a href="" class="text-white">Terms of Use and Privacy Policy.</a>
                 </div>
               </div>
 
+            </div>
+            <div class="modal-footer">
+              <div class="d-flex justify-content-end pt-3">
+                <button  class="btn btn-success btn-lg ms-2" id="submitPay">Submit</button>
+              </div>
             </div>
             </div>
           </div>

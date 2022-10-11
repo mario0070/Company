@@ -11,9 +11,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body id="bodys">
+  
+  <!-- <button class="btn btn-info" id="drag" onclick="sendEmail()">click</button> -->
 
   <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
     <div class="container-fluid">
@@ -26,13 +29,16 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="start.html">Sign Up</a>
+            <a class="nav-link" href="start.html">Free Trial</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Marketing</a>
+            <a class="nav-link" href="#message">Message</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#explore">Explore</a>
           </li>
         </ul>
       </div>
@@ -278,7 +284,7 @@
   </div>
 
 
-  <div class="sec8">
+  <div class="sec8" id="explore">
     <div class="row text-center">
 
       <div class="col-sm-3">
@@ -365,7 +371,7 @@
 
 
 
-  <div class="sec9">
+  <div class="sec9" >
     <div class="row">
 
       <div class="col-sm-8 text-center">
@@ -379,7 +385,7 @@
           <div class="text-center">
             <span class="reveal">Call for more Info</span>
             <p class="reveal">09138650286</p>
-            <i class="fa-solid fa-phone reveal text-light"></i>
+            <i class="fa-solid fa-phone reveal text-light" id="message"></i>
           </div>
         </div>
       </div>
@@ -389,7 +395,7 @@
 
 
 
-  <div class="sec10">
+  <div class="sec10" >
 
     <div class="row">
 
@@ -397,14 +403,15 @@
           <img src="cta.png" alt="">
       </div>
 
-      <div class="col-sm-6">
+      <div class="col-sm-6" >
         <div class="content">
           <div class="head">
             <h2 class="reveal">Get Regular Updates from <Strong class="text-danger">Company</Strong></h2>
             <p class="reveal">SUBSCRIBE TO NEWSLETTER</p>
             
             <input type="email" name="" id="email-news" placeholder="Email" required onkeyup="wow()">
-            <button class="btn btn-primary" id="subscribe" disabled>Subscribe</button>
+            <button class="btn" id="subscribe" disabled>Subscribe</button>
+            <!-- <button class="btn btn-info" id="drag" onclick="sendEmail()" >click</button> -->
           </div>
         </div>
       </div>
@@ -445,6 +452,7 @@
     </div>
   </footer>
 
+  
 
 </main>
 
@@ -518,6 +526,9 @@
               </div>
             </div>
 
+
+
+
             <div class="modal fade right" id="two">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content bg-dark">
@@ -563,12 +574,32 @@
 
 
 
+            <!-- <form method="post"> -->
+            <!-- </form> -->
 
 
 
-
-
-
+            <script type="text/javascript">
+              function sendEmail() {
+                // var drag= document.getElementById("drag");
+                //   drag.addEventListener("click",()=>{
+                //     alert("wow")
+                //   })
+                // alert("wow")
+                Email.send({
+                  Host: "smtp.gmail.com",
+                  Username: "larvish",
+                  Password: "larvish007",
+                  To: 'ganiyjamiu5@email_address.com',
+                  From: "ganiujamiu03@gmail.com",
+                  Subject: "Sending Email using javascript",
+                  Body: "Well that was easy!!",
+                })
+                  .then(function (message) {
+                    alert(message)
+                  });
+              }
+            </script>
 
  
 
@@ -596,8 +627,6 @@ document.getElementById("toastbtn").onclick = function() {
   toastList.forEach(toast => toast.show())
 }
     </script>
-
-
 
 <script src="script.js"></script>
 </body>

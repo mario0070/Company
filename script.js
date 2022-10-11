@@ -1,7 +1,7 @@
 
 //typing animation
 let typed = new Typed(".demo", {
-    strings: ["Muhammadjamiu", "Web And Mobile Developer","Search Engine Optimization", "Blogger"],
+    strings: ["I'm Muhammadjamiu", "Web And Mobile Developer","Search Engine Optimization",],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
@@ -51,8 +51,10 @@ function wow(){
     var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if(email.value.match(validRegex)){
         document.getElementById("subscribe").disabled=false
+        document.getElementById("subscribe").classList.add("valid")
     }else{
         document.getElementById("subscribe").disabled=true
+        document.getElementById("subscribe").classList.remove("valid")
     }
 }
 
@@ -123,6 +125,25 @@ emailStartSend.addEventListener("click" , () => {
         modal2.style.display="block"
     }, 6000);
 })
+
+
+// function sendEmail() {
+//     var drag= document.getElementById("drag");
+//             drag.addEventListener("click",()=>{
+//         })
+//     Email.send({
+//       Host: "smtp.gmail.com",
+//       Username: "sender@email_address.com",
+//       Password: "Enter your password",
+//       To: 'receiver@email_address.com',
+//       From: "sender@email_address.com",
+//       Subject: "Sending Email using javascript",
+//       Body: "Well that was easy!!",
+//     })
+//       .then(function (message) {
+//         alert("mail sent successfully")
+//       });
+//   }
 
 
 
