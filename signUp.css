@@ -143,14 +143,15 @@ label,.gender{
 
 #svgs img{
     width: 25px;
-    margin-right: .6em;
-    margin-bottom: .8em;
+    margin-left: .6em;
+    /* margin-right: .6em;  */
+     margin-bottom: .8em;
 }
 
 
-#svgs{
+/* #svgs{
     float: right;
-}
+} */
 /* 
 #svgcard{
     justify-content: space-between;
