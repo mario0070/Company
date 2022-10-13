@@ -70,7 +70,7 @@
     cursor: pointer;
   }
 
-  .part2 .buttons button{
+  .part2 .buttons a{
     width: 10em;
     font-weight: 900;
   }

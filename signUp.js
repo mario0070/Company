@@ -143,7 +143,8 @@ continues.addEventListener("click",() => {
         header.classList.add("valid")
         names.innerText=fname.value + " "  + lname.value
         fullname.value=fname.value + " "  + lname.value
-       },1000)
+        document.getElementById("continue").disabled=true
+       },9000)
 })
 
 

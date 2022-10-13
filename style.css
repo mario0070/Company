@@ -618,6 +618,19 @@ footer img{
 
 
 
+  .medial{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 1.5em;
+    background-color: rgba(41, 41, 217, 0.568);background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,51,121,0.8804564061952906) 19%, rgba(0,212,255,1) 100%);
+    padding: .5em;
+    border-radius: 5em;
+    z-index: 200;
+    margin-bottom: .5em;
+    margin-right: .5em;
+  }
 
 
 
@@ -640,7 +653,7 @@ footer img{
         margin-top: 2em;
     }
 
-    .sec1 .buttons button{
+    .sec1 .buttons button,.sec1 .buttons a{
         padding: 1em;
         width: 40%;
         margin-left: .5em;
@@ -684,16 +697,31 @@ footer img{
     
     .sec2 .col img{
         width: 500px;
-        margin-top: 1em;
+        margin-top: -1em;
     }
 
     .sec2 .soc{
         margin-left: 5em;
     }
 
+    .sec3{
+        font-size: 1.2em;
+        text-align: center;
+        border-bottom-right-radius: 0em;
+        border-top-left-radius: 0em;
+        color: rgba(245, 245, 245, 0.674);
+    }
+
+    
     .sec3 input{
-        width: 60%;
-        margin-left: 12em;
+        width: 80%;
+        margin-left: 4em;
+        outline: none;
+    }
+
+    .sec3 .spinner{
+        position: relative;
+        transform: translateY(-80px);
     }
 
     .sec5 .row .section{

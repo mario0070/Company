@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Docs</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/217c115d22.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    
+    <main>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 ">
+                    <div class="content info">
+
+                        <h1 class="text-white">Contact US</h1>
+                        <div class="section">
+                            <h3 class="text-white">ADDRESS</h3>
+                            <span>198 Arowolo Street , Sabo Yaba Lagos State</span>
+                        </div>
+                        <div class="section">
+                            <h3 class="text-white">PHONE</h3>
+                            <span>+2349138650286</span>
+                        </div>
+                        <div class="section">
+                            <h3 class="text-white">EMAIL</h3>
+                            <span>Muhammadjamiuganiu2@gmai.com</span>
+                        </div>
+                        <div class="section">
+                            <h3 class="text-white">WEBSITE</h3>
+                            <span>https://company.com</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="content form">
+
+                        <h1 class="text-light mb-3">Get in touch</h1>
+
+                          <div class=" mb-4">
+                            <input type="text" id="name" onkeyup="valid1() , validall()" class="form-control-md" placeholder="Name"/>
+                          </div>
+            
+                          <div class="form-outline mb-4">
+                            <input type="email" onkeyup="valid2(),validall()" class="form-control-md" id="email" placeholder="Email"/>
+                          </div>
+
+                          <div class="form-outline mb-4">
+                            <input type="text" id="subject" onkeyup="valid3(),validall()" class=" form-control-md" placeholder="Subject"/>
+                          </div>
+            
+                          <div class="form-outline mb-4">
+                            <textarea name="" id="textarea" onkeyup="validall()" cols="30" rows="10" placeholder="Message"></textarea>
+                          </div>
+                        <button class="btn btn-primary" id="send" disabled data-bs-toggle="modal" data-bs-target="#one">Send message</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    
+    <div class="modal fade" id="one">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h3>Processing</h3>
+              <button class="btn-close bg-light" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>Thank You MR / Mr's  <strong class="text-danger" id="user"> </strong></p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-success" data-bs-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <script src="contact.js"></script>
+</body>
+</html>
