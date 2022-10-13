@@ -1,0 +1,102 @@
+body{
+    background:url(./bg-01.jpg) rgba(255, 255, 0, 0.203);
+    /* background: -webkit-linear-gradient(left,rgba(0,168,255,0.5),rgba(185,0,255,0.5)); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+main{
+    text-align: center;
+    overflow: scroll;
+    padding: 2em;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: -webkit-linear-gradient(left,rgba(0,168,255,0.5),rgba(185,0,255,0.5));
+   
+}
+
+.container{
+    background-color: whitesmoke;
+    padding: 2em;
+    width:100%;
+    height: 90%;
+    border-radius: .9em;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.436);
+}
+
+.container h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1em;
+    margin-top: .5em;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.559);
+}
+
+.container input{
+    width: 100%;
+    padding: 1em;
+    border-radius: .5em;
+    border: none;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.192);
+    outline: none;
+}
+
+.container button{
+    margin-top: 1em;
+    color: whitesmoke;
+    font-weight: 900;
+    font-style: italic;
+    padding: .8em;
+    width: 10em;
+    border-radius: 1em;
+    border: none;
+    background: -webkit-linear-gradient(left,rgba(0,168,255,0.5),rgba(185,0,255,0.5));
+}
+
+.icons{
+    margin: 12% 23%;
+}
+
+.icons i{
+    color: rgba(185,0,255,0.5);
+    font-size: 2.2em;
+    border-radius: 12em;
+    margin: .2em;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.119);
+}
+
+.container a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.495);
+    font-size: 1.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+@media screen and (min-width:600px) {
+
+    .container{
+        background-color: whitesmoke;
+        padding: 2em;
+        width:35%;
+        height: 110%;
+        border: .5em;
+    }
+
+    .container input{
+        width: 80%;
+    }
+
+    .icons{
+        margin: 12% 30%;
+    }
+
+}
