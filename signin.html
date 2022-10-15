@@ -20,16 +20,20 @@
             <div class="form">
                 <h1 class="">Sign In</h1>
                   <div class="form-outline mb-4">
-                    <i class="fa-sharp fa-solid fa-bug" id="emailicon"></i>
-                    <input type="email"  class="form-control-md" id="email" placeholder="Email" onkeyup="valid()"/>
+                    <!-- <i class="fa-sharp fa-solid fa-bug" id="emailicon"></i> -->
+                    <input type="email"  class="form-control-md" id="email" placeholder="Email" onkeyup="emailValidate() ,btnValidate()"/>
+                    <i class="fa-sharp fa-solid fa-bug text-white" id="emailicon"></i>
+                    <i class="fa fa-check text-white" id="emailicons"></i>
                   </div>
 
                   <div class="form-outline mb-4">
-                    <i class="fa-sharp fa-solid fa-bug text-danger" id="passicon"></i>
-                    <input type="password" id="password"  class=" form-control-md" placeholder="password"/>
+                    
+                    <input type="password" id="password" onkeyup="passValidate(),btnValidate()"  class=" form-control-md" placeholder="password"/>
+                    <i class="fa-sharp fa-solid fa-bug text-white" id="passicon"></i>
+                    <i class="fa fa-check text-white" id="passicons"></i>
                   </div>
 
-                  <button class="btn">SIGN IN</button>
+                  <button class="btn"  id="btn" disabled data-bs-toggle="modal" data-bs-target="#one">SIGN IN</button>
 
                   <div class="icons d-flex text-center">
                     <i class="btn fa-brands fa-google"></i>
@@ -40,6 +44,25 @@
             </div>
         </div>
     </main>
+
+
+    <div class="modal fade" id="one">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+              <span id="user"></span>
+              <button class="btn-close bg-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>Under Development , Coming Soon ...</p>
+            </div>
+            <div class="modal-footer">
+              <a class="btn btn-primary" href="index.html">Homepage</a>
+              <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
