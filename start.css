@@ -122,8 +122,6 @@
     bottom: 0;
     right: 0;
     font-size: 1.5em;
-    background-color: rgba(41, 41, 217, 0.568);background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,51,121,0.8804564061952906) 19%, rgba(0,212,255,1) 100%);
     padding: .5em;
     border-radius: 5em;
     z-index: 200;

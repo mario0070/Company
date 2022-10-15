@@ -84,7 +84,7 @@ main{
     font-family: 'Courier New', Courier, monospace;
 }
 
-.form-outline .fa-bug {
+.form-outline .iconB {
     font-size: .7em;
     background-color: red;
     padding: .2em;
@@ -92,10 +92,13 @@ main{
     display: none;
     position: absolute;
     z-index: 20;
+    left: 1;
     transform: translateX(-30px) translateY(15px);
     box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.119);
     
 }
+
+
 
 .form-outline .fa-check {
     font-size: .7em;
@@ -110,19 +113,18 @@ main{
     
 }
 
-
 #user{
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.3em;
 }
 
-#emailicons.valid{
+/* #emailicons.valid{
     display: inline;
 }
 
 #passicons.valid{
     display: inline;
-}
+} */
 
 
 #email.valid::placeholder{
@@ -133,18 +135,18 @@ main{
     color: red;
 }
 
-#emailicon.valid{
+/* #emailicon.valid{
     display: inline;
-}
+} */
 
 #email.valid{
     border: 1px solid red;
 }
 
-
+/* 
 #passicon.valid{
     display: inline;
-}
+} */
 
 #password.valid{
     border: 1px solid red;
@@ -200,5 +202,22 @@ main{
         margin-bottom: 1em;
         margin-top: .5em;
     }
+
+    #passicon.valid{
+        display: inline;
+    }
+
+    #emailicon.valid{
+        display: inline;
+    }
+    
+    #emailicons.valid{
+        display: inline;
+    }
+    
+    #passicons.valid{
+        display: inline;
+    }
+    
 
 }

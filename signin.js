@@ -43,4 +43,6 @@ function btnValidate(){
 
 document.getElementById("btn").addEventListener("click",() => {
     document.getElementById("user").innerText= email.value
+    email.value = ""
+    password.value = ""
 })
