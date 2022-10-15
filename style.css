@@ -633,6 +633,14 @@ footer img{
   }
 
 
+  .signH{
+    position: relative;
+  }
+  .signH::after{
+    display: none;
+  }
+
+
 
 
 
@@ -640,6 +648,24 @@ footer img{
 
 
   @media screen and (min-width:600px) {
+
+    .signH::after{
+        display: inline;
+        position: absolute;
+        content: "";
+        width: 15%;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.603);
+        left: 15%;
+        bottom: 5px;
+        transition: all 0.4s ease-in-out;
+      }
+    
+      .nav-item:hover .signH::after {
+        width: 80%;
+        left: 1;
+        height: 4px;
+    }
   
 
     .sec1 .col img{
