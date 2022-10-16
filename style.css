@@ -37,6 +37,18 @@ nav img{
     border-radius: 1em;
 }
 
+::-webkit-scrollbar{
+    box-shadow:inset .3em .3em 1em rgba(11, 188, 242, 0.925);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(41, 41, 217, 0.568);background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,51,121,0.8804564061952906) 19%, rgba(0,212,255,1) 100%);
+    border-radius: 10em;
+}
+
+
+
 .reveal{
     position: relative;
     /* transform: translateX(150px); */
